@@ -66,17 +66,24 @@ console.log(userNumber);
 console.log(ranNumber);
 sum(userNumber, ranNumber);
 console.log(sum(userNumber, ranNumber));
+let pari;
+let dispari;
 
 if (sum(userNumber, ranNumber) % 2 == 0){
-    console.log('il numero è pari');
+    pari = ('il numero è pari');
 } else {
-    console.log('il numero è dispari');
+    dispari = ('il numero è dispari');
 }
 
+let vittoria;
+let sconfitta;
+
 if (sum(userNumber, ranNumber) % 2 == 0 && evenodd == 'pari'){
-    console.log('Bravo è pari, hai indovinato');
+    vittoria = ('bravo è pari, hai indovinato');
 } else if (sum(userNumber, ranNumber) % 2 !== 0 && evenodd == 'dispari') {
-    console.log('Bravo è dispari, hai indovinato');
+    vittoria = ('bravo è dispari, hai indovinato');
 } else {
-    console.log('Sei una merda, hai perso');
+    sconfitta = ('sei una merda, hai perso');
 }
+
+resultElement.innerHTML = `Il numero da te scelto è ${userNumber}, il computer ha scelto ${ranNumber}, ${pari || dispari}, ${vittoria || sconfitta}`;
