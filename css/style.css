@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'pokemon';
+    src: url('../font/PKMN\ RBYGSC.woff2') format(woff2);
+    font-size: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'pokemon';
+}
+
+.my_position {
+    bottom: 70px;
+    left: 180px;
+}
+
+/* dimensione e bordo tasto */
+.my_border {
+    padding: 20px 100px;
+
+    color: gray;
+    box-shadow:    -5px 0 0 0 gray,
+    5px 0 0 0 gray,
+    0 -5px 0 0 gray,
+    0 5px 0 0 gray;
+}
+
+/* effetto al passaggio del mouse sul tasto */
+.my_border:hover {
+    color: black;
+    box-shadow:    -15px 0 0 0 black,
+    15px 0 0 0 black,
+    0 -15px 0 0 black,
+    0 15px 0 0 black;
+}
