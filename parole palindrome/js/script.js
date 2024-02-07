@@ -13,6 +13,7 @@ function inspect() {
         
         word = prompt('Capisco se la parola che inserisci è palindroma');
 
+        /* Controllo se il valore immesso è un numero o un valore valido */ 
         if (!isNaN(word)){
         
             alert('Hai inserito un valore non valido riprova');
